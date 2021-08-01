@@ -82,6 +82,7 @@ export default function Home() {
                 </div>
                
                 <button className="index-button" onClick={() => alert("AAA")}>about me</button>
+                <button className="index-button" onClick={() => alert("AAA")}>Projects</button>
             </div>
             <div className="index-portrait-bar"></div>
             </IndexStyle>
