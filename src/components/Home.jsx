@@ -1,6 +1,6 @@
 import '../styles/home.css';
 
-function App() {
+function Home() {
   return (
     <div className="Home">
       <h1>HOME</h1>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
