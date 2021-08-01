@@ -68,15 +68,15 @@ export default function Home() {
                 </div>
                 <div className="index-links">
                     <div className="index-github" onClick={() => window.open("https://github.com/JavierV8")}>
-                        <img alt="img" className="index-github-img" src={`../static/images/github.png`} />
+                        <img alt="img" className="index-github-img" src={`../images/github.png`} />
                         <p className="index-info">GitHub</p>
                     </div>
                     <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
-                        <img alt="img" className="index-codeSandBox-img" src={`../static/images/codesandbox.png`} />
+                        <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
                         <p className="index-info">CodeSandbox</p>
                     </div>
                     <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
-                        <img alt="img" className="index-codeSandBox-img" src={`../static/images/codesandbox.png`} />
+                        <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
                         <p className="index-info">GitBook</p>
                     </div>
                 </div>
