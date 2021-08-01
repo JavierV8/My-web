@@ -95,6 +95,9 @@ export const IndexStyleLandscape = styled.div`
         font-size: ${pr => pr.boxWidth * 0.034}px;
         font-weight: 600;
     }
+    .home-button-first {
+        margin-right: 20px;
+    }
     .index-button {
         margin-top: ${pr => pr.boxWidth * 0.12}px;
         font-size: ${pr => pr.boxWidth * 0.035}px;
@@ -222,6 +225,9 @@ export const IndexStylePotrait = styled.div`
         .index-text-4 {
                 font-size: 4vw;
                 font-weight: 600;
+        }
+        .home-button-first {
+            left: 20px;
         }
         .index-button {
                 position: fixed;

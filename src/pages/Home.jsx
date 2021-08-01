@@ -62,30 +62,30 @@ export default function Home() {
             <IndexStyle boxWidth={boxWidth} isVisible={imageLoaded < 36}>
                 <div className="index-face-box" ref={faceBox}>{images}</div>
                 <div className="index-text-box" id="index-tex-tbox-id">
-                <div className="index-text-1">Hi Im</div>
-                <div className="index-text-2">Javier Sanchez</div>
-                <Word_Carousel />
-                <div className="index-text-3">
-                    Passionate about information technologies and Self-learning software engineering.
+                    <div className="index-text-1">Hi Im</div>
+                    <div className="index-text-2">Javier Sanchez</div>
+                    <Word_Carousel />
+                    <div className="index-text-3">
+                        Passionate about information technologies and Self-learning software engineering.
+                    </div>
+                    <div className="index-links">
+                        <div className="index-github" onClick={() => window.open("https://github.com/JavierV8")}>
+                            <img alt="img" className="index-github-img" src={`../images/github.png`} />
+                            <p className="index-info">GitHub</p>
+                        </div>
+                        <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
+                            <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
+                            <p className="index-info">CodeSandbox</p>
+                        </div>
+                        <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
+                            <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
+                            <p className="index-info">GitBook</p>
+                        </div>
+                    </div>
+                
+                    <button className="home-button-first index-button" onClick={() => history.push('/about')}>about me</button>
+                    <button className="index-button" onClick={() => history.push('/projects')}>Projects</button>
                 </div>
-                <div className="index-links">
-                    <div className="index-github" onClick={() => window.open("https://github.com/JavierV8")}>
-                        <img alt="img" className="index-github-img" src={`../images/github.png`} />
-                        <p className="index-info">GitHub</p>
-                    </div>
-                    <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
-                        <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
-                        <p className="index-info">CodeSandbox</p>
-                    </div>
-                    <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
-                        <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
-                        <p className="index-info">GitBook</p>
-                    </div>
-                </div>
-               
-                <button className="index-button" onClick={() => history.push('/about')}>about me</button>
-                <button className="index-button" onClick={() => history.push('/projects')}>Projects</button>
-            </div>
             <div className="index-portrait-bar"></div>
             </IndexStyle>
         </>
