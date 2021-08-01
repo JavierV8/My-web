@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 import Word_Carousel from '../components/Word_Carousel';
 import { LoadingIndexPageStyle, IndexStyleLandscape, IndexStylePotrait } from '../styles/home';
 
@@ -9,6 +10,7 @@ export default function Home() {
     const [images, setImages] = useState([]);
     const [imageLoaded, setImageLoaded] = useState(0);
     const [isPotrait, setIsPotrait] = useState(false);
+    const history = useHistory();
 
     useEffect(() => {
         const resizeHandler = () => {
@@ -81,8 +83,8 @@ export default function Home() {
                     </div>
                 </div>
                
-                <button className="index-button" onClick={() => alert("AAA")}>about me</button>
-                <button className="index-button" onClick={() => alert("AAA")}>Projects</button>
+                <button className="index-button" onClick={() => history.push('/about')}>about me</button>
+                <button className="index-button" onClick={() => history.push('/projects')}>Projects</button>
             </div>
             <div className="index-portrait-bar"></div>
             </IndexStyle>
