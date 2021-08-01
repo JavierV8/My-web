@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Word_Carousel from '../components/Word_Carousel';
 import { LoadingIndexPageStyle, IndexStyleLandscape, IndexStylePotrait } from '../styles/home';
 
 export default function Home() {
@@ -61,7 +62,7 @@ export default function Home() {
                 <div className="index-text-box" id="index-tex-tbox-id">
                 <div className="index-text-1">Hi Im</div>
                 <div className="index-text-2">Javier Sanchez</div>
-        
+                <Word_Carousel />
                 <div className="index-text-3">
                     Passionate about information technologies and Self-learning software engineering.
                 </div>
