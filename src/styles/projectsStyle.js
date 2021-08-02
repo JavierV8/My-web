@@ -9,7 +9,38 @@ export const ProjectsStyle = styled.ul`
     grid-row-gap: 5px;
     width: 80%;
     margin: auto;
+
+    .projects-goHome-button {
+        position: fixed;
+        font-family: 'Montserrat', 'Helvetica';
+        font-size: ${pr => pr.isMobile ? '1.5vw' : '1vw'};
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        padding: 1vw;
+        bottom: 5%;
+        left: 5%;
+        background: #990000;
+        color: white;
+        border-radius: 8px;
+    }
     
+    @media screen and (orientation:portrait) {
+        .projects-goHome-button {
+            position: fixed;
+            font-family: 'Montserrat', 'Helvetica';
+            font-size: ${pr => pr.isMobile ? '3vh' : '2vh'};
+            font-weight: 100;
+            border: none;
+            cursor: pointer;
+            padding: 1.5vh;
+            bottom: 5%;
+            left: 5%;
+            background: #990000;
+            color: white;
+            border-radius: 8px;
+        }
+    }
     @media only screen and (max-width : 1250px) {
         grid-template-columns: repeat(2, 1fr);
     }
