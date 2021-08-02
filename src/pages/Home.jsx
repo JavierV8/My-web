@@ -73,13 +73,13 @@ export default function Home() {
                             <img alt="img" className="index-github-img" src={`../images/github.png`} />
                             <p className="index-info">GitHub</p>
                         </div>
-                        <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
-                            <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
-                            <p className="index-info">CodeSandbox</p>
+                        <div className="index-github" onClick={() => window.open("https://javier-san-mail.gitbook.io/javascript-reference/")}>
+                            <img alt="img" className="index-codeSandBox-img" src={`../images/gitBook.png`} />
+                            <p className="index-info">GitBook</p>
                         </div>
                         <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
                             <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
-                            <p className="index-info">GitBook</p>
+                            <p className="index-info">CodeSandbox</p>
                         </div>
                     </div>
                 

@@ -227,7 +227,7 @@ export const IndexStylePotrait = styled.div`
                 font-weight: 600;
         }
         .home-button-first {
-            left: 20px;
+            left: 130px;
         }
         .index-button {
                 position: fixed;
