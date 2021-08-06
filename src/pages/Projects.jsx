@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { ProjectsStyle } from '../styles/projectsStyle';
 import ProjectCard from '../components/ProjectCard';
-import { projects } from './projects';
+import { projects } from '../projectsList/projects';
 
 
 const Projects = () => {
