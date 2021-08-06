@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Word_Carousel = () => {
+const WordCarousel = () => {
     return (
         <div className="carousel-word">
                 <div className="change_inner">
@@ -13,4 +13,4 @@ const Word_Carousel = () => {
     )
 }
 
-export default Word_Carousel;
+export default WordCarousel;

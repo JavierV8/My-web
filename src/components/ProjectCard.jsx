@@ -6,7 +6,7 @@ const ProjectCard = props => {
     return (
         <ProjectCardStyle>
             <div className="list-content">
-                <img src={`../images/${image}`}></img>
+                <img src={`../images/${image}`} alt=""></img>
                 <h4>{subtitle}</h4>
                 <p>{text}</p>
                 <button onClick={() => window.open(demo_url)}>Live Demo</button>

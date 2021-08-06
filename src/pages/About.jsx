@@ -52,7 +52,7 @@ const About = () => {
             <AboutStyle isMobile={isMobile}>
                 <div className="about-image">
                 {!isPotrait && <h1>About Me</h1>}
-                   <div className="about-image-box"><img src={`../images/about.png`} ref={imgRef}></img></div>
+                   <div className="about-image-box"><img src={`../images/about.png`} ref={imgRef} alt=""></img></div>
                 </div>
                 <div className="about-text">
                     {isPotrait ? <h1>About Me</h1> : <h1>...</h1>}

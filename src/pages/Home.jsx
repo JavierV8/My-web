@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
-import Word_Carousel from '../components/Word_Carousel';
+import WordCarousel from '../components/Word_Carousel';
 import { LoadingIndexPageStyle, IndexStyleLandscape, IndexStylePotrait } from '../styles/home';
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
                 transform: `translate(${random1}px, ${random2}px)`, 
                 width: imageSize - 1,
             };
-            imagess.push(<img style={styles} alt="resized image" id={`image_${i}`} className="imageCara" src={`../images/cara/Index_${i}.png`} onLoad={() => setImageLoaded(img => img + 1)} />)
+            imagess.push(<img style={styles} alt="" id={`image_${i}`} className="imageCara" src={`../images/cara/Index_${i}.png`} onLoad={() => setImageLoaded(img => img + 1)} />)
         }
         setImages(imagess);
     }, [imageSize]);
@@ -64,7 +64,7 @@ export default function Home() {
                 <div className="index-text-box" id="index-tex-tbox-id">
                     <div className="index-text-1">Hi Im</div>
                     <div className="index-text-2">Javier Sanchez</div>
-                    <Word_Carousel />
+                    <WordCarousel />
                     <div className="index-text-3">
                         Passionate about information technologies and Self-learning software engineering.
                     </div>
