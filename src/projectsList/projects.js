@@ -2,7 +2,7 @@ export const projects = [
     {
         "title": "Snake Game",
         "subtitle": "Html, JavasScript, css",
-        "text": "Lorem ipsum odor amet, consectetuer adipiscing elit. Leo montes ridiculus malesuada inceptos; mi orci per senectus magna. Inceptos nec feugiat turpis; neque scelerisque turpis mi. Potenti quam placerat a ex eleifend ridiculus vel mollis. Erat inceptos velit nulla condimentum nec, eu sodales. Aptent suscipit litora torquent fusce et inceptos. Justo urna tempor ullamcorper; turpis donec pellentesque commodo.",
+        "text": "The famous Snake game! Good demo in order to improve algorithms logic in real project.",
         "image": "snake.png",
         "demo_url": "https://snake-game-a7d1b.web.app/",
         "gitHub_url": "https://github.com/JavierV8/SnakeGame"
@@ -25,8 +25,8 @@ export const projects = [
     },
     {
         "title": "Web",
-        "subtitle": "JavaScript | React | NextJS",
-        "text": "This is my portfolio web, made with nextJS.",
+        "subtitle": "ES6 | React",
+        "text": "This is my web, made with Create-React-App, i tried to keep it as simple as possible in order to reduce maintenance.",
         "image": "web.png",
         "demo_url": "",
         "gitHub_url": "https://github.com/JavierV8/devportfolio"
@@ -34,7 +34,7 @@ export const projects = [
     {
         "title": "Real Time Data Monitoring",
         "subtitle": "ES6 | Arduino | C++ | MQTT | WebSockets | Chart.js",
-        "text": "This is a Demo for monitoring data from an Arduino that send the temperature and humidity. The data is sending to a NodeJS server through MQTT. The client that represent the data in a web APP is conected to the server by websockets.",
+        "text": "This is a Demo for monitoring data from an Arduino that send the temperature and humidity. The arduino microcontroller is coded in C++ to recive the sensors information and send it to a NodeJS server through MQTT protocol. The NodeJS server opens a websocket comunication with the client developed in JavaScript in order to represent the data in real time. The web also uses  chart.js library to represent the data in animated charts. Because the arduino is not 24/7 conected I created a JavaScript simulator that get the temperature and humidity randomly and send it to the server throw MQTT.",
         "image": "dataMonitoring.png",
         "demo_url": "https://real-time-data-monitoring.web.app/",
         "gitHub_url": "https://github.com/JavierV8/Real-time-data-monitoring"
@@ -42,7 +42,7 @@ export const projects = [
     {
         "title": "Store App",
         "subtitle": "React | Redux | NodeJS | Express | MongoDB | JWT",
-        "text": "Ecommerce online shop is a full-stack MERN web App. This project shows how to build an entire app with just javascript, powered with React and express. You can create account make a shop purchase and watch all your purchse history.",
+        "text": "Ecommerce online shop is a full-stack MERN web App. This project shows how to build an entire app with just javascript, powered with React, express and MongoDB. The app has arround 100 products allowing to create account, make a shop purchase and watch all your purchse history.",
         "image": "storeApp.png",
         "demo_url": "https://e-commerce-mernapp.herokuapp.com/#/",
         "gitHub_url": "https://github.com/JavierV8/MERN-E-commerce"
@@ -50,7 +50,7 @@ export const projects = [
     {
         "title": "Movie App",
         "subtitle": "React | Redux | Router | WebPack | Axios",
-        "text": "Movie-Search is a responsive React app that load data from The Movie Database API. This simple project shows how React components and Redux can be used to build a friendly user experience with instant visual updates and scaleable code.",
+        "text": "Movie-Search is a responsive React app that load data from The Movie Database API. It allow to search, get some information and even watch the trailer on over a million movies and tv shows. The app it also organize the movies in diferents categories and it is automaticly updated with the last movies releases added in the data base.",
         "image": "movieApp.png",
         "demo_url": "https://moviesearch-91113.firebaseapp.com/",
         "gitHub_url": "https://github.com/JavierV8/Movie-Search"
