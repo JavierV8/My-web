@@ -4,7 +4,7 @@ export const ProjectCardStyle = styled.li`
 
     border: 2px solid #e6e6e6;
     display: flex;
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -19,15 +19,30 @@ export const ProjectCardStyle = styled.li`
     img {
         width: 100%;
     }
+    .project-card-img {
+        width: 25px;
+
+        left: 3px;
+        margin-left: 0; /* 1/2 of total width of your img */
+        top: 50%;
+        margin-top: -13px; /* 1/2 of total height of your img */
+        position: absolute;
+    }
+
+    .project-card-commit {
+        font-size: 13px;
+    }
     h3 {
+        margin: 0;
         margin-left: 20px;
         font-size: 22px;
         font-weight: 400;
     }
     p{
+        margin: 10px;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 100;
         color: black;
     }
@@ -38,22 +53,24 @@ export const ProjectCardStyle = styled.li`
         margin: 20px;
         width: 90%;
         margin-bottom: 100px;
+        margin-top: 0;
     }
     .projectCard-tool {
         position: relative;
         margin: 0;
-        font-size: 14px;
+        font-size: 10px;
         padding: 5px;
         border-radius: 5px;
         margin: 5px;
-        background: #d6d6d6;
-        font-weight: 400;
+        background: #ededed;
+        font-weight: 500;
     }
     button {
         position: absolute;
         bottom: 0;
         font-size: 18px;
         padding: 10px;
+        padding-left: 30px;
         border: 2px solid #e6e6e6;
         background: none;
         border-radius: 5px;
@@ -65,9 +82,12 @@ export const ProjectCardStyle = styled.li`
         color: white;
         background: black;
         border: 2px solid black;
+        .project-card-img {
+            filter: invert(100%);
+        }
     }
     .project-card-button-github {
-        left: 120px;
+        left: 140px;
     }
     h4 {
         margin: 0;

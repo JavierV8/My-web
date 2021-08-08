@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         "title": "Matress Store",
-        "tools": '["ES6", "Bootstrap", "Reactstrap", "Express","React", "Redux", "MongoDB"]',
+        "tools": '["ES6", "Reactstrap", "Express","React", "Redux", "MongoDB"]',
         "text": "This web app is a small representation of a mattress store with small API that provide all the data to the front made in React.",
         "image": "mattress.png",
         "demo_url": "https://mattress-store-c4c36.web.app/#/",
@@ -24,9 +24,9 @@ export const projects = [
         "gitHub_url": "https://github.com/JavierV8/React-Hooks-functionalities"
     },
     {
-        "title": "Web",
+        "title": "My Web",
         "subtitle": "ES6 | React",
-        "tools": '["ES6", "React"]',
+        "tools": '["ES6", "React", "Create-React-App"]',
         "text": "My personal website with some information about me and a list of my open source projects that I developed in order to improve my skills in software development.",
         "image": "web.png",
         "demo_url": "",
@@ -35,7 +35,7 @@ export const projects = [
     {
         "title": "Real Time Data Monitoring",
         "tools": '["ES6", "Arduino", "C++", "MQTT","WebSockets", "Chart.js"]',
-        "text": "Monitoring data from an Arduino that send the temperature and humidity to a NodeJS server through MQTT protocol. The NodeJS server opens a websocket comunication with the client developed in JavaScript in order to represent the data in real time in an animated chart.",
+        "text": "Monitoring data from an Arduino that send the temperature and humidity to a NodeJS server through MQTT protocol. The NodeJS server opens a websocket comunication with the client in order to represent the data in real time in an animated chart.",
         "image": "dataMonitoring.png",
         "demo_url": "https://real-time-data-monitoring.web.app/",
         "gitHub_url": "https://github.com/JavierV8/Real-time-data-monitoring"
@@ -43,7 +43,7 @@ export const projects = [
     {
         "title": "Store App",
         "tools": '["ES6", "React", "Redux", "NodeJS","Express", "MongoDB", "JWT"]',
-        "text": "Ecommerce online shop is a full-stack MERN web App. This project shows how to build an entire app with just javascript, powered with React, express and MongoDB. The app has arround 100 products allowing to create account, make a shop purchase and watch all your purchse history.",
+        "text": "Full-stack MERN web App that shows how to build an entire app with just javascript, powered with React, express and MongoDB. The app has arround 100 products allowing to create account, make a shop purchase and watch all your purchse history.",
         "image": "storeApp.png",
         "demo_url": "https://e-commerce-mernapp.herokuapp.com/#/",
         "gitHub_url": "https://github.com/JavierV8/MERN-E-commerce"
@@ -52,7 +52,7 @@ export const projects = [
         "title": "Movie App",
         "subtitle": "React | Redux | Router | WebPack | Axios",
         "tools": '["ES6", "React", "Redux", "Router","WebPack", "Axios"]',
-        "text": "A responsive React app that load data from The Movie Database API. It allow to search, get some information and even watch the trailer on over a million movies and tv shows. The app it also organize the movies in diferents categories and it is automaticly updated with the last movies releases.",
+        "text": "A responsive app that load data from The Movie Database API. It allow to search and even watch the trailer on over a million movies and tv shows. The app it also organized in diferents categories and it is automaticly updated with the last movies releases.",
         "image": "movieApp.png",
         "demo_url": "https://moviesearch-91113.firebaseapp.com/",
         "gitHub_url": "https://github.com/JavierV8/Movie-Search"
