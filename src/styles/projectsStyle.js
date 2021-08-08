@@ -8,6 +8,7 @@ export const ProjectsStyle = styled.ul`
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     width: 80%;
+    max-width: 1200px;
     margin: auto;
 
     .projects-goHome-button {
