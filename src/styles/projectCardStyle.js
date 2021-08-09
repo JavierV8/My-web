@@ -28,9 +28,27 @@ export const ProjectCardStyle = styled.li`
         margin-top: -13px; /* 1/2 of total height of your img */
         position: absolute;
     }
-
+    .projectCard-commit-box {
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+    .project-card-calendar {
+        width: 25px;
+        position: absolute;
+        top: -4px;
+    }
+    .projectCard-commit-box p{
+        flex: 1;
+    }
     .project-card-commit {
         font-size: 13px;
+    }
+    .project-card-commit2 {
+        font-size: 13px;
+        text-align: right;
+        position: relative;
+        left: -30px;
     }
     h3 {
         margin: 0;
@@ -42,7 +60,7 @@ export const ProjectCardStyle = styled.li`
         margin: 10px;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 100;
         color: black;
     }
@@ -68,8 +86,8 @@ export const ProjectCardStyle = styled.li`
     button {
         position: absolute;
         bottom: 0;
-        font-size: 18px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 8px;
         padding-left: 30px;
         border: 2px solid #e6e6e6;
         background: none;
@@ -87,7 +105,7 @@ export const ProjectCardStyle = styled.li`
         }
     }
     .project-card-button-github {
-        left: 140px;
+        left: 135px;
     }
     h4 {
         margin: 0;

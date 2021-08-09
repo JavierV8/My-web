@@ -9,7 +9,11 @@ const ProjectCard = props => {
             <div className="list-content">
                 <img src={`../images/${image}`} alt=""></img>
                 <h3>{title}</h3>
-                <p className="project-card-commit">Last commit: 11 Jul 2021</p>
+                <div className="projectCard-commit-box">
+                <p className="project-card-commit">Last commit:</p>
+                <p className="project-card-commit2">11 Jul 2021<img alt="img" className="project-card-calendar" src={`../images/calendar.png`} /></p>
+                </div>
+
                 <p>{text}</p>
                 <div className="project-card-tools">
                 {JSON.parse(tools).map(t => <span className="projectCard-tool">{t}</span>)}
