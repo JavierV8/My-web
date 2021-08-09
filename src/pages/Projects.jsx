@@ -9,7 +9,7 @@ const Projects = () => {
 
     const history = useHistory();
     const pro = projects.map(p => {
-        return <ProjectCard image={p.image} title={p.title} subtitle={p.subtitle} tools={p.tools} text={p.text} demo_url={p.demo_url} gitHub_url={p.gitHub_url} />
+        return <ProjectCard image={p.image} apiURL={p.gitHub_url_API} title={p.title} subtitle={p.subtitle} tools={p.tools} text={p.text} demo_url={p.demo_url} gitHub_url={p.gitHub_url} />
     })
     useEffect(() => {
         document.body.style.overflowY = "scroll";
