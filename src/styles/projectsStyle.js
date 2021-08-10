@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const ProjectsStyle1 = styled.div`
+.projects-title {
+    width: 90%;
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+`
 export const ProjectsStyle = styled.ul`
     display: grid;
     overflow: hidden;
@@ -10,6 +19,10 @@ export const ProjectsStyle = styled.ul`
     width: 90%;
     max-width: 1300px;
     margin: auto;
+    top: 50px;
+    ul {
+        paffing: 0;
+    }
 
     .projects-goHome-button {
         position: fixed;
@@ -44,6 +57,7 @@ export const ProjectsStyle = styled.ul`
     }
     @media only screen and (max-width : 1250px) {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0;
     }
     @media only screen and (max-width : 900px) {
         width: 98%;
@@ -51,5 +65,6 @@ export const ProjectsStyle = styled.ul`
     }
     @media only screen and (max-width : 450px) {
         grid-template-columns: repeat(1, 1fr);
+        padding: 0;
     }
 `

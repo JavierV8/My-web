@@ -17,7 +17,9 @@ export default function Home() {
             if(window.innerHeight > window.innerWidth){
                 setIsPotrait(true);
                 setBoxWidth(window.innerHeight);
-                setImageSize(window.innerHeight / 6);
+                setImageSize((window.innerWidth * 0.9) / 6);
+                if (window.innerHeight / window.innerWidth <= 1.6) setImageSize((window.innerWidth * 0.7) / 6);
+                if (window.innerHeight / window.innerWidth <= 1.33) setImageSize((window.innerWidth * 0.6) / 6);
             } else {
                 setIsPotrait(false);
                 setBoxWidth(faceBox.current.offsetWidth);
@@ -71,15 +73,12 @@ export default function Home() {
                     <div className="index-links">
                         <div className="index-github" onClick={() => window.open("https://github.com/JavierV8")}>
                             <img alt="img" className="index-github-img" src={`../images/github.png`} />
-                            <p className="index-info">GitHub</p>
                         </div>
                         <div className="index-github" onClick={() => window.open("https://javier-san-mail.gitbook.io/javascript-reference/")}>
                             <img alt="img" className="index-codeSandBox-img" src={`../images/gitBook.png`} />
-                            <p className="index-info">GitBook</p>
                         </div>
                         <div className="index-github" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
                             <img alt="img" className="index-codeSandBox-img" src={`../images/codesandbox.png`} />
-                            <p className="index-info">CodeSandbox</p>
                         </div>
                     </div>
                 

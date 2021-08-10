@@ -132,14 +132,14 @@ export const IndexStyleLandscape = styled.div`
         width: ${pr => pr.boxWidth * 0.15}px;
     }
     .index-github-img {
-        width: ${pr => pr.boxWidth * 0.13}px;
-        height: ${pr => pr.boxWidth * 0.13}px;
+        width: 50px;
+        height: 50px;
         padding: 0
         margin: 0;
     }
     .index-codeSandBox-img {
-        width: ${pr => pr.boxWidth * 0.085}px;
-        height: ${pr => pr.boxWidth * 0.085}px;
+        width: 50px;
+        max-height: 50px;
         padding: 0
         margin: 0;
         margin-top: 15%;
@@ -167,60 +167,48 @@ export const IndexStyleLandscape = styled.div`
 `;
 
 export const IndexStylePotrait = styled.div`
-        width: 100vh;
+        width: 100vw;
         height: 99vh;
         display: block
         top: 0;
         left: 0;
 
         .index-face-box {
-                width: 100vh;
-                height: 100vh;
-                opacity: 0.3;
-                position: relative;
-                left: -5%;
-                top: 15%;
+            margin: auto;
+            margin-top: 0%;
+            width: 90vw;
+            height: 90vw;
         }
-            .imageCara {
-                margin-bottom: -5px;
-                padding: 0;
+        .imageCara {
+            margin-bottom: -5px;
+            padding: 0;
         }
-            .index-text-box {
-                position: absolute;
-                top: 0;
-                transition: opacity 5000ms ease-out;
-                transition-delay: 1000ms;
-                padding-left: 5vw;
-                opacity: ${pr=> (pr.isVisible ? 0 : 1)};
+        .index-text-box {
+            text-align: center;
+            transition: opacity 5000ms ease-out;
+            transition-delay: 1000ms;
+            opacity: ${pr=> (pr.isVisible ? 0 : 1)};
         }
-    
         .index-text-1 {
-                margin-top: 10vh;
-                font-size:  8vw;
-                font-weight: 300;
-
-                margin-top: 10vh;
-                font-size: 11vw;
-                font-weight: 300;
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                height: 10vw;
+            display: none;
         }
         .index-text-2 {
-                font-size: 13vw;
-                font-weight: bold;
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                height: 13vw;
-                margin: 0;
-                padding: 0;
+            font-size: 12vw;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            height: 13vw;
+            margin: 0;
+            margin-top: -8%;
+            padding: 0;
         }
         .index-text-3 {
-                width: 95vw;
-                margin-top: 1vw;
-                font-size: 7vw;
-                line-height: 1.1;
-                font-weight: 300;
+            width: 95vw;
+            margin: auto;
+            margin-top: 5vw;
+            font-size: 6vw;
+            line-height: 1.1;
+            font-weight: 300;
         }
         .index-text-4 {
                 font-size: 4vw;
@@ -230,33 +218,43 @@ export const IndexStylePotrait = styled.div`
             left: 130px;
         }
         .index-button {
-                position: fixed;
-                bottom: 5vh;
-                font-size: 5vw;
+                bottom: 3vh;
+                font-size: 3.8vw;
+                font-weight: 400;
                 border-radius: 1.5vw;
-                font-weight: 100;
                 background: #0066ff;
                 border: none;
                 padding: 3vw;
                 color: white;
                 cursor: pointer;
                 z-index: 1;
+                margin: 30px;
         }
         .live {
                 left: 40vw;
         }
         .index-links {
             display: flex;
+            position: absolute;
+            bottom: 0px;
+            width: 50%;
+            margin: auto;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+        .index-links div {
+            margin: auto;
         }
         .index-github {
-            width: ${pr => pr.boxWidth * 0.1}px;
-            height: ${pr => pr.boxWidth * 0.1}px;
+            width: 80px;
+            height: 50px;
             position: relative;
             text-align: center;
             cursor: pointer;
         }
         .index-info {
-            font-size: ${pr => pr.boxWidth * 0.015}px;
+            font-size: 8px;
             font-weight: bold;
             padding: 0;
             margin: 0;
@@ -265,14 +263,14 @@ export const IndexStylePotrait = styled.div`
             width: ${pr => pr.boxWidth * 0.1}px;
         }
         .index-github-img {
-            width: ${pr => pr.boxWidth * 0.1}px;
-            height: ${pr => pr.boxWidth * 0.1}px;
+            width: 40px;
+            height: 40px;
             padding: 0
             margin: 0;
         }
         .index-codeSandBox-img {
-            width: ${pr => pr.boxWidth * 0.065}px;
-            height: ${pr => pr.boxWidth * 0.065}px;
+            width: 30px;
+            height: 30px;
             padding: 0
             margin: 0;
             margin-top: 15%;
@@ -289,8 +287,8 @@ export const IndexStylePotrait = styled.div`
 
 
         .carousel-word {
-                height: 18vw;
-                font-size: 4.5vw;
+                height: 9vw;
+                font-size: 3.8vw;
                 overflow: hidden;
         }
             
@@ -305,6 +303,107 @@ export const IndexStylePotrait = styled.div`
         .element {
                 padding: 0;
                 margin: 0;
-                height: ${pr => pr.boxWidth * 0.12}px;
+                height: ${pr => pr.boxWidth * 0.05}px;
+        }
+
+        /* Minimum aspect ratio */
+        @media (min-aspect-ratio: 5/8) {
+            .index-face-box {
+                margin: auto;
+                margin-top: 0%;
+                width: 70vw;
+                height: 70vw;
+            }
+            .index-text-3 {
+                margin-top: 4vw;
+                font-size: 5.5vw;
+            }
+            .carousel-word {
+                height: 7.7vw;
+                font-size: 3.5vw;
+            }
+            .index-button {
+                bottom: 3vh;
+                font-size: 3.5vw;
+                font-weight: 400;
+                border-radius: 1.5vw;
+                background: #0066ff;
+                border: none;
+                padding: 2vw;
+                color: white;
+                cursor: pointer;
+                z-index: 1;
+                margin: 30px;
+            }
+            .index-github-img {
+                width: 60px;
+                height: 60px;
+                padding: 0
+                margin: 0;
+            }
+            .index-codeSandBox-img {
+                width: 50px;
+                height: 50px;
+                padding: 0
+                margin: 0;
+                margin-top: 15%;
+            }
+        }
+
+        @media (min-aspect-ratio: 3/4) {
+            .index-face-box {
+                margin: auto;
+                margin-top: 0%;
+                width: 60vw;
+                height: 60vw;
+            }
+            .index-text-2 {
+                font-size: 9vw;
+                font-weight: bold;
+                margin: 0;
+                margin-top: -5%;
+                padding: 0;
+            }
+            .index-text-3 {
+                margin-top: 3vw;
+                font-size: 4vw;
+                width: 80vw;
+            }
+            .carousel-word {
+                height: 6vw;
+                font-size: 2.8vw;
+                margin-top: -20px;
+            }
+            .index-button {
+                bottom: 3vh;
+                font-size: 3vw;
+                font-weight: 400;
+                border-radius: 1.5vw;
+                background: #0066ff;
+                border: none;
+                padding: 2vw;
+                color: white;
+                cursor: pointer;
+                z-index: 1;
+                margin: 30px;
+            }
+            .index-github-img {
+                width: 60px;
+                height: 60px;
+                padding: 0
+                margin: 0;
+            }
+            .index-codeSandBox-img {
+                width: 50px;
+                height: 50px;
+                padding: 0
+                margin: 0;
+                margin-top: 15%;
+            }
+            .element {
+                padding: 0;
+                margin: 0;
+                height: ${pr => pr.boxWidth * 0.05}px;
+        }
         }
 `;

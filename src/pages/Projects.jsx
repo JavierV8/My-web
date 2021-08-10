@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { ProjectsStyle } from '../styles/projectsStyle';
+import { ProjectsStyle, ProjectsStyle1 } from '../styles/projectsStyle';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../projectsList/projects';
 
@@ -17,14 +17,16 @@ const Projects = () => {
         return () => document.body.style.overflowY = "hidden";
     }, [])
     return (
-        <>
-        <h1>Projects</h1>
-        <h4>The following demostrations are those that i have deployed, so you can check them in live:</h4>
-        <ProjectsStyle>
-            {pro}
-            <button className="projects-goHome-button" onClick={() => history.push('/')}>Go Home</button>
-        </ProjectsStyle>
-        </>
+        <ProjectsStyle1>
+            <div className="projects-title">
+                <h1>Projects</h1>
+                <h4>The following demostrations are those that i have deployed, so you can check them in live:</h4>
+            </div>
+            <ProjectsStyle style={{pading: 0}}>
+                {pro}
+                <button className="projects-goHome-button" onClick={() => history.push('/')}>Go Home</button>
+            </ProjectsStyle>
+        </ProjectsStyle1>
     );
 };
 
