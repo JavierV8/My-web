@@ -17,7 +17,7 @@ console.log(title)
         .catch((error) => {
           console.log(error);
         });
-    }, []);
+    }, [apiURL]);
 
     return (
         <ProjectCardStyle>

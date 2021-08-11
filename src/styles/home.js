@@ -115,34 +115,18 @@ export const IndexStyleLandscape = styled.div`
     .index-links {
         display: flex;
     }
-    .index-github {
-        width: ${pr => pr.boxWidth * 0.15}px;
-        height: ${pr => pr.boxWidth * 0.15}px;
+    .index-link {
+        width: 50px;
+        height: 50px;
         position: relative;
         text-align: center;
         cursor: pointer;
     }
-    .index-info {
-        font-size: ${pr => pr.boxWidth * 0.025}px;
-        font-weight: bold;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        bottom: 0%;
-        width: ${pr => pr.boxWidth * 0.15}px;
-    }
-    .index-github-img {
+    .index-link-img {
         width: 50px;
         height: 50px;
         padding: 0
         margin: 0;
-    }
-    .index-codeSandBox-img {
-        width: 50px;
-        max-height: 50px;
-        padding: 0
-        margin: 0;
-        margin-top: 15%;
     }
     
     
@@ -168,7 +152,7 @@ export const IndexStyleLandscape = styled.div`
 
 export const IndexStylePotrait = styled.div`
         width: 100vw;
-        height: 99vh;
+        height: 100vh;
         display: block
         top: 0;
         left: 0;
@@ -211,99 +195,69 @@ export const IndexStylePotrait = styled.div`
             font-weight: 300;
         }
         .index-text-4 {
-                font-size: 4vw;
-                font-weight: 600;
+            font-size: 4vw;
+            font-weight: 600;
         }
         .home-button-first {
             left: 130px;
         }
         .index-button {
-                bottom: 3vh;
-                font-size: 3.8vw;
-                font-weight: 400;
-                border-radius: 1.5vw;
-                background: #0066ff;
-                border: none;
-                padding: 3vw;
-                color: white;
-                cursor: pointer;
-                z-index: 1;
-                margin: 30px;
+            bottom: 3vh;
+            font-size: 3.8vw;
+            font-weight: 400;
+            border-radius: 1.5vw;
+            background: #0066ff;
+            border: none;
+            padding: 3vw;
+            color: white;
+            cursor: pointer;
+            z-index: 1;
+            margin: 30px;
         }
         .live {
-                left: 40vw;
+            left: 40vw;
         }
         .index-links {
             display: flex;
             position: absolute;
-            bottom: 0px;
+            bottom: 10px;
             width: 50%;
             margin: auto;
             left: 50%;
             transform: translateX(-50%);
-
         }
-        .index-links div {
+        .index-link {
             margin: auto;
-        }
-        .index-github {
-            width: 80px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             position: relative;
-            text-align: center;
             cursor: pointer;
         }
-        .index-info {
-            font-size: 8px;
-            font-weight: bold;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            bottom: 0%;
-            width: ${pr => pr.boxWidth * 0.1}px;
-        }
-        .index-github-img {
+        .index-link-img {
             width: 40px;
             height: 40px;
             padding: 0
             margin: 0;
         }
-        .index-codeSandBox-img {
-            width: 30px;
-            height: 30px;
-            padding: 0
-            margin: 0;
-            margin-top: 15%;
-        }
-        .index-portrait-bar {
-            position: absolute;
-            bottom: 0;
-            width: 100vw;
-            height: 11vh;
-            background #383838;
-            display: none;
-        }
-
 
 
         .carousel-word {
-                height: 9vw;
-                font-size: 3.8vw;
-                overflow: hidden;
+            height: 9vw;
+            font-size: 3.8vw;
+            overflow: hidden;
         }
-            
         .carousel-word h1{
-                font-family: 'Montserrat', 'Helvetica';
-                font-weight: 300;
+            font-family: 'Montserrat', 'Helvetica';
+            font-weight: 300;
         }
         .change_inner {
-                position: relative;
-                animation: ${kf} 15s ease-in-out infinite;
+            position: relative;
+            animation: ${kf} 15s ease-in-out infinite;
         }
         .element {
-                padding: 0;
-                margin: 0;
-                height: ${pr => pr.boxWidth * 0.05}px;
+            padding: 0;
+            margin: 0;
+            height: ${pr => pr.boxWidth * 0.05}px;
         }
 
         /* Minimum aspect ratio */
@@ -315,42 +269,21 @@ export const IndexStylePotrait = styled.div`
                 height: 70vw;
             }
             .index-text-3 {
-                margin-top: 4vw;
+                margin-top: 1vw;
                 font-size: 5.5vw;
             }
             .carousel-word {
-                height: 7.7vw;
+                height: 8.5vw;
                 font-size: 3.5vw;
+                margin-top: -5px;
             }
             .index-button {
-                bottom: 3vh;
                 font-size: 3.5vw;
-                font-weight: 400;
-                border-radius: 1.5vw;
-                background: #0066ff;
-                border: none;
                 padding: 2vw;
-                color: white;
-                cursor: pointer;
-                z-index: 1;
-                margin: 30px;
-            }
-            .index-github-img {
-                width: 60px;
-                height: 60px;
-                padding: 0
-                margin: 0;
-            }
-            .index-codeSandBox-img {
-                width: 50px;
-                height: 50px;
-                padding: 0
-                margin: 0;
-                margin-top: 15%;
             }
         }
 
-        @media (min-aspect-ratio: 3/4) {
+        @media (min-aspect-ratio: 4/5) {
             .index-face-box {
                 margin: auto;
                 margin-top: 0%;
@@ -370,35 +303,21 @@ export const IndexStylePotrait = styled.div`
                 width: 80vw;
             }
             .carousel-word {
-                height: 6vw;
+                height: 6.8vw;
                 font-size: 2.8vw;
-                margin-top: -20px;
+                margin-top: -30px;
             }
+            .element {
+                padding: 0;
+                margin: 0;
+                height: ${pr => pr.boxWidth * 0.12}px;
+            }
+
+
+
             .index-button {
-                bottom: 3vh;
                 font-size: 3vw;
-                font-weight: 400;
-                border-radius: 1.5vw;
-                background: #0066ff;
-                border: none;
                 padding: 2vw;
-                color: white;
-                cursor: pointer;
-                z-index: 1;
-                margin: 30px;
-            }
-            .index-github-img {
-                width: 60px;
-                height: 60px;
-                padding: 0
-                margin: 0;
-            }
-            .index-codeSandBox-img {
-                width: 50px;
-                height: 50px;
-                padding: 0
-                margin: 0;
-                margin-top: 15%;
             }
             .element {
                 padding: 0;
