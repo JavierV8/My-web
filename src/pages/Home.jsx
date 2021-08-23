@@ -71,7 +71,7 @@ export default function Home() {
                         Passionate about information technologies and Self-learning software engineering.
                     </div>
                     <div className="index-links">
-                        <div className="index-Link" onClick={() => window.open("https://github.com/JavierV8")}>
+                        <div className="index-link" onClick={() => window.open("https://github.com/JavierV8")}>
                             <img alt="img" className="index-link-img" src={`../images/github.png`} />
                         </div>
                         <div className="index-link" onClick={() => window.open("https://javier-san-mail.gitbook.io/javascript-reference/")}>

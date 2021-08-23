@@ -116,6 +116,7 @@ export const IndexStyleLandscape = styled.div`
         display: flex;
     }
     .index-link {
+        padding-top: 10px;
         width: 50px;
         height: 50px;
         position: relative;
@@ -123,8 +124,8 @@ export const IndexStyleLandscape = styled.div`
         cursor: pointer;
     }
     .index-link-img {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         padding: 0
         margin: 0;
     }
