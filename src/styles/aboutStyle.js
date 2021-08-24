@@ -78,6 +78,7 @@ export const AboutStyleLandscape = styled.div`
 export const AboutStylePotrait = styled.div`
     display: block;
     background-color: #dbdbdb;
+    height: 100vh;
     positon: fixed;
     .about-goHome-button {
         left: 5%;
@@ -119,7 +120,7 @@ export const AboutStylePotrait = styled.div`
         position: absolute;
         width: 100%;
         z-index: 2;
-        opacity: 0.5;
+        opacity: 0.4;
         transition: all 0.5s cubic-bezier(.51,1.4,.82,1.01);
         transform: translateX(-100%);
     }
