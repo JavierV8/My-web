@@ -18,7 +18,7 @@ export default function Home() {
                 setIsPotrait(true);
                 setBoxWidth(window.innerHeight);
                 setImageSize((window.innerWidth * 0.9) / 6);
-                if (window.innerHeight / window.innerWidth <= 1.6) setImageSize((window.innerWidth * 0.7) / 6);
+                if (window.innerHeight / window.innerWidth <= 1.666) setImageSize((window.innerWidth * 0.7) / 6);
                 if (window.innerHeight / window.innerWidth <= 1.25) setImageSize((window.innerWidth * 0.6) / 6);
             } else {
                 setIsPotrait(false);

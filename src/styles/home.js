@@ -262,21 +262,29 @@ export const IndexStylePotrait = styled.div`
         }
 
         /* Minimum aspect ratio */
-        @media (min-aspect-ratio: 5/8) {
+        @media (min-aspect-ratio: 3/5) {
             .index-face-box {
                 margin: auto;
                 margin-top: 0%;
                 width: 70vw;
                 height: 70vw;
             }
+            .index-text-2 {
+                font-size: 70px;
+                font-weight: bold;
+                margin-bottom: -25px;
+                margin-top: -5%;
+                padding: 0;
+                height: 100px;
+            }
             .index-text-3 {
-                margin-top: 1vw;
-                font-size: 5.5vw;
+                margin-top: 20px;
+                font-size: 30px;
+                width: 80vw;
             }
             .carousel-word {
-                height: 8.5vw;
-                font-size: 3.5vw;
-                margin-top: -5px;
+                height: 55px;
+                font-size: 22px;
             }
             .index-button {
                 font-size: 3.5vw;
@@ -292,21 +300,21 @@ export const IndexStylePotrait = styled.div`
                 height: 60vw;
             }
             .index-text-2 {
-                font-size: 9vw;
+                font-size: 70px;
                 font-weight: bold;
-                margin: 0;
+                margin-bottom: -25px;
                 margin-top: -5%;
                 padding: 0;
+                height: 100px;
             }
             .index-text-3 {
-                margin-top: 3vw;
-                font-size: 4vw;
+                margin-top: 20px;
+                font-size: 35px;
                 width: 80vw;
             }
             .carousel-word {
-                height: 6.8vw;
-                font-size: 2.8vw;
-                margin-top: -30px;
+                height: 55px;
+                font-size: 22px;
             }
             .element {
                 padding: 0;
@@ -317,7 +325,7 @@ export const IndexStylePotrait = styled.div`
 
 
             .index-button {
-                font-size: 3vw;
+                font-size: 16px;
                 padding: 2vw;
             }
             .element {

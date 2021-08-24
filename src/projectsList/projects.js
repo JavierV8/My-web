@@ -31,7 +31,7 @@ export const projects = [
         "subtitle": "ES6 | React",
         "tools": '["ES6", "React", "Create-React-App"]',
         "text": "My personal website with some information about me and a list of my open source projects that I developed in order to improve my skills in software development.",
-        "image": "web.png",
+        "image": "my-web.png",
         "demo_url": "",
         "gitHub_url": "https://github.com/JavierV8/My-web",
         "gitHub_url_API": "https://api.github.com/repos/JavierV8/My-web/branches/main"
