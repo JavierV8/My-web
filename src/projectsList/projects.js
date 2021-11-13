@@ -1,5 +1,14 @@
 export const projects = [
     {
+        "title": "Haar Cascade Face detection",
+        "tools": '["JavasScript", "OpenCV", "web API", "Viola Jones algorithm"]',
+        "text": "OpenCV imeplemntation of the famous Viola Jones algorithm named after two computer vision researchers who proposed the method in 2001, Paul Viola and Michael Jones. It’s a machine learning algorithm for face detection that needs a lot of positive images (images of faces) and negative images (images without faces) to train the classifier.",
+        "image": "haarFace.png",
+        "demo_url": "https://haarcascades-facedetector.web.app/",
+        "gitHub_url": "https://github.com/JavierV8/FaceDetector",
+        "gitHub_url_API": "https://api.github.com/repos/JavierV8/FaceDetector/branches/main"
+    },
+    {
         "title": "Snake Game",
         "tools": '["HTML", "JavasScript", "CSS"]',
         "text": "The famous Snake game! Good demo in order to improve algorithms logic in real project.",
