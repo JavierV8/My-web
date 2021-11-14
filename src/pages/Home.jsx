@@ -83,7 +83,7 @@ export default function Home() {
                     </div>
                 
                     <button className="home-button-first index-button" onClick={() => history.push('/about')}>about me</button>
-                    <button className="index-button" onClick={() => history.push('/projects')}>Projects</button>
+                    <button className="index-button" onClick={() => history.push('/projects')}>Challenges</button>
                 </div>
             </IndexStyle>
         </>

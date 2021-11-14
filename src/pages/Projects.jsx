@@ -19,8 +19,8 @@ const Projects = () => {
     return (
         <ProjectsStyle1>
             <div className="projects-title">
-                <h1>Projects</h1>
-                <h4>The following demostrations are those that i have deployed, so you can check them in live:</h4>
+                <h1>CODING CHALLENGES</h1>
+                <h4>The following projects are challanges that help me better understand the JS programming language, improving my problem-solving skills and algorithms.</h4>
             </div>
             <ProjectsStyle style={{pading: 0}}>
                 {pro}

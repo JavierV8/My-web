@@ -5,8 +5,14 @@ export const ProjectsStyle1 = styled.div`
     width: 90%;
     max-width: 1300px;
     position: relative;
-    margin: auto;
+    margin: 0;
     padding: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 `
 export const ProjectsStyle = styled.ul`
@@ -19,6 +25,7 @@ export const ProjectsStyle = styled.ul`
     width: 90%;
     max-width: 1300px;
     margin: auto;
+    padding: 0;
     top: 50px;
     ul {
         paffing: 0;
