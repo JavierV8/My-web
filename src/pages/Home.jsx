@@ -74,9 +74,6 @@ export default function Home() {
                         <div className="index-link" onClick={() => window.open("https://github.com/JavierV8")}>
                             <img alt="img" className="index-link-img" src={`../images/github.png`} />
                         </div>
-                        <div className="index-link" onClick={() => window.open("https://javier-san-mail.gitbook.io/javascript-reference/")}>
-                            <img alt="img" className="index-link-img" src={`../images/gitBook.png`} />
-                        </div>
                         <div className="index-link" onClick={() => window.open("https://codesandbox.io/u/JavierV8")}>
                             <img alt="img" className="index-link-img" src={`../images/codesandbox.png`} />
                         </div>
