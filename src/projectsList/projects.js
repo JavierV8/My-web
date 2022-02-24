@@ -1,5 +1,14 @@
 export const projects = [
     {
+        "title": "Coding Platform",
+        "tools": '["JavasScript", "Monaco Editor", "React"]',
+        "text": "Online coding platform developed with React and Monaco editor. The platform is designed to improve Algorithms & Data Structure skills in JavaScript by providing different problems to be solved. It has more than a 100 problems clasified by dificulty and data structure whit diferents solutions.",
+        "image": "codeEditor.png",
+        "demo_url": "https://online-code-editor-d4954.web.app/",
+        "gitHub_url": "https://github.com/JavierV8/codingInterviewProblemas",
+        "gitHub_url_API": "https://api.github.com/repos/JavierV8/FaceDetector/branches/main"
+    },
+    {
         "title": "Haar Cascade Face detection",
         "tools": '["JavasScript", "OpenCV", "web API", "Viola Jones algorithm"]',
         "text": "OpenCV imeplemntation of the famous Viola Jones algorithm named after two computer vision researchers who proposed the method in 2001, Paul Viola and Michael Jones. It’s a machine learning algorithm for face detection that needs a lot of positive images (images of faces) and negative images (images without faces) to train the classifier.",
