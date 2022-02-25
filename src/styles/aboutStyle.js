@@ -4,7 +4,6 @@ export const AboutStyleLandscape = styled.div`
     display: flex;
     background-color: #dbdbdb;
     .about-goHome-button {
-
         left: 5%;
 
         position: fixed;
@@ -27,7 +26,8 @@ export const AboutStyleLandscape = styled.div`
     .about-text {
         margin-right: 3.5vw;
         overflow-Y: scroll;
-        height: ${pr => pr.isMobile ? '70vh' : '85vh'};
+        height: ${pr => pr.isMobile ? '70vh' : '90vh'};
+        padding: 0px;
     }
     .about-image {
     }
@@ -64,7 +64,7 @@ export const AboutStyleLandscape = styled.div`
     }
     p {
         font-family: 'Montserrat', 'Helvetica';
-        font-size: 1.4vw;
+        font-size: 1.25vw;
         font-weight: 200;
         color: black;
         width: 88%;
@@ -72,6 +72,15 @@ export const AboutStyleLandscape = styled.div`
         margin-top: 1vw;
         text-align: justify;
         margin-left: 4.5vw;
+    }
+    .about-subtitle {
+        font-size: 1.7vw;
+    }
+    .about-text h1, h3, p{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 100%;
     }
 `
 
@@ -102,6 +111,9 @@ export const AboutStylePotrait = styled.div`
         background: transparent;
     }
     .about-text {
+        height: 91%;
+        position: relative;
+        overflow: scroll;
     }
     .about-image {
         height: 100vw;
