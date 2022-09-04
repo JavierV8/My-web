@@ -64,7 +64,7 @@ export default function Home() {
             <IndexStyle boxWidth={boxWidth} isVisible={imageLoaded < 36}>
                 <div className="index-face-box" ref={faceBox}>{images}</div>
                 <div className="index-text-box" id="index-tex-tbox-id">
-                    <div className="index-text-1">Hi Im</div>
+                    <div className="index-text-1">Hi there 👋 Im</div>
                     <div className="index-text-2">Javier Sanchez</div>
                     <WordCarousel />
                     <div className="index-text-3">
