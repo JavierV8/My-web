@@ -3,6 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import { Image } from 'astro:assets';
 import self from '../assets/images/self.jpg';
+
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import MailIcon from "../components/icons/Mail.astro"
 ---
 
 <Layout title="Welcome to Astro." description="sdfdfgdfgdf">
@@ -13,12 +18,27 @@ import self from '../assets/images/self.jpg';
 				<h1 class="m-0">Javi <span class="text-gradient">Sanchez</span></h1>
 				<p>Full Stack web developer at Veridas</p>
 				<p>Underworld is an American action horror film series created by Kevin Grevioux, Len Wiseman, and Danny McBride. It follows characters who are caught up</p>
+				<nav class="flex gap-4 mt-8 flex-wrap">
+					<SocialPill href="https://linkedin.com/in/midudev">
+					  <LinkedInIcon class="size-4 md:size-6" />
+					   LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/midudev">
+					  <GitHubIcon class="size-4 md:size-6" />
+					   GitHub
+					</SocialPill>
+					<SocialPill href="mailto:miduga@gmail.com">
+					  <MailIcon class="size-4 md:size-6" />
+					   miduga@gmail.com
+					</SocialPill>
+				  </nav>
+		
 			</div>
 			<Image src={self} alt="A bird sitting on a nest of eggs." class="w-[25%] h-fit rounded-full"/>
 		</div>
-
+		
 		<div>
-			<h1>Experience</h1>
+			<h1>Projects</h1>
 			<p>Underworld is an American action horror film series created by Kevin Grevioux, Len Wiseman, and Danny McBride. It follows characters who are caught up in a war between vampires and werewolves (called "lycans" within the films). Most of the films star Kate Beckinsale as Selene.</p>
 			<p>The first film, Underworld (2003), introduces Selene, an elite vampire-warrior who defies her orders, and Michael Corvin (Scott Speedman), a human who gets caught up in the war. The second film, Underworld: Evolution (2006), follows Selene and Michael as they are hunted by their enemies.</p>
 			<p>The third film, Underworld: Rise of the Lycans (2009), is the prequel to the series, chronicling the origins of the vampire-lycan war. The fourth film, Underworld: Awakening (2012), is the sequel to Underworld: Evolution. In this film, humans have discovered the existence of vampires and lycans, and are trying to eradicate both species. A final film, titled Underworld: Blood Wars (2016), focuses on Selene who tries to stop a new war between vampires and lycans. </p>	
