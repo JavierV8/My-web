@@ -1,25 +1,137 @@
+---
+import { Image } from "astro:assets";
+import car from "../assets/images/car.webp";
+import SocialPill from "./SocialPill.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import MailIcon from "./icons/Mail.astro";
+---
+
 <div>
-    <h1>Projects</h1>
-    <p>
-        Underworld is an American action horror film series created by Kevin
-        Grevioux, Len Wiseman, and Danny McBride. It follows characters who are
-        caught up in a war between vampires and werewolves (called "lycans"
-        within the films). Most of the films star Kate Beckinsale as Selene.
+    <h1 class="text-3xl mb-8"><span class="mr-4">02.</span>Things I’ve Built</h1>
+    <div class="h-[300px] relative flex items-center mb-20">
+
+            <Image
+            src={car}
+            alt="A bird sitting on a nest of eggs."
+            class="h-[100%] w-fit border border-cyan-700 rounded-lg"
+            />
+
+
+    
+    <div class="w-[60%] text-right right-0 absolute t-[50%]">
+        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0</h3>
+    <time
+        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >Released on January 13th, 2022</time
+    >
+    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 bg-cyan-950 p-2 rounded-lg">
+        Get access to over 20+ pages including a dashboard layout, charts,
+        kanban board, calendar, and pre-order E-commerce & Marketing pages.
     </p>
-    <p>
-        The first film, Underworld (2003), introduces Selene, an elite
-        vampire-warrior who defies her orders, and Michael Corvin (Scott
-        Speedman), a human who gets caught up in the war. The second film,
-        Underworld: Evolution (2006), follows Selene and Michael as they are
-        hunted by their enemies.
-    </p>
-    <p>
-        The third film, Underworld: Rise of the Lycans (2009), is the prequel to
-        the series, chronicling the origins of the vampire-lycan war. The fourth
-        film, Underworld: Awakening (2012), is the sequel to Underworld:
-        Evolution. In this film, humans have discovered the existence of
-        vampires and lycans, and are trying to eradicate both species. A final
-        film, titled Underworld: Blood Wars (2016), focuses on Selene who tries
-        to stop a new war between vampires and lycans.
-    </p>
+    <ul class="flex text-sm justify-end">
+        <li class="ml-6">VS Code</li>
+        <li class="ml-6">Sublime Text</li>
+        <li class="ml-6">Atom</li>
+        <li class="ml-6">iTerm2</li>
+        <li class="ml-6">Hyper</li>
+    </ul>
+    <nav class="flex gap-4 mt-4 flex-wrap justify-end">
+        <SocialPill href="https://github.com/Tigreton-dev">
+            <GitHubIcon class="size-2 md:size-4" />
+             GitHub
+        </SocialPill>
+        <SocialPill href="mailto:javier.san.mail@gmail.com">
+            <MailIcon class="size-4 md:size-4" />
+             live demo
+        </SocialPill>
+    </nav>
+
+    </div>
+    </div>
+
+
+    <div class="h-[300px] relative flex items-center mb-20">
+
+
+
+<div class="w-[60%] text-left absolute t-[50%] z-10">
+    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0</h3>
+<time
+    class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    >Released on January 13th, 2022</time
+>
+<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 bg-cyan-950 p-2 rounded-lg">
+    Get access to over 20+ pages including a dashboard layout, charts,
+    kanban board, calendar, and pre-order E-commerce & Marketing pages.
+</p>
+<ul class="flex text-sm justify-start">
+    <li class="mr-6">VS Code</li>
+    <li class="mr-6">Sublime Text</li>
+    <li class="mr-6">Atom</li>
+    <li class="mr-6">iTerm2</li>
+    <li class="mr-6">Hyper</li>
+</ul>
+<nav class="flex gap-4 mt-4 flex-wrap justify-start">
+    <SocialPill href="https://github.com/Tigreton-dev">
+        <GitHubIcon class="size-2 md:size-4" />
+         GitHub
+    </SocialPill>
+    <SocialPill href="mailto:javier.san.mail@gmail.com">
+        <MailIcon class="size-4 md:size-4" />
+         live demo
+    </SocialPill>
+</nav>
+
+</div>
+
+<Image
+src={car}
+alt="A bird sitting on a nest of eggs."
+class="h-[100%] w-fit border border-cyan-700 rounded-lg absolute right-0"
+/>
+</div>
+
+
+<div class="h-[300px] relative flex items-center mb-20">
+
+    <Image
+    src={car}
+    alt="A bird sitting on a nest of eggs."
+    class="h-[100%] w-fit border border-cyan-700 rounded-lg"
+    />
+
+
+
+<div class="w-[60%] text-right right-0 absolute t-[50%]">
+<h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0</h3>
+<time
+class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+>Released on January 13th, 2022</time
+>
+<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 bg-cyan-950 p-2 rounded-lg">
+Get access to over 20+ pages including a dashboard layout, charts,
+kanban board, calendar, and pre-order E-commerce & Marketing pages.
+</p>
+<ul class="flex text-sm justify-end">
+<li class="ml-6">VS Code</li>
+<li class="ml-6">Sublime Text</li>
+<li class="ml-6">Atom</li>
+<li class="ml-6">iTerm2</li>
+<li class="ml-6">Hyper</li>
+</ul>
+<nav class="flex gap-4 mt-4 flex-wrap justify-end">
+<SocialPill href="https://github.com/Tigreton-dev">
+    <GitHubIcon class="size-2 md:size-4" />
+     GitHub
+</SocialPill>
+<SocialPill href="mailto:javier.san.mail@gmail.com">
+    <MailIcon class="size-4 md:size-4" />
+     live demo
+</SocialPill>
+</nav>
+
+</div>
+</div>
+
+
 </div>

@@ -6,32 +6,36 @@ import LinkedInIcon from "./icons/LinkedIn.astro";
 import SocialPill from "./SocialPill.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 import MailIcon from "./icons/Mail.astro";
-
+import CanvasReactComponent from "./CanvasReactComponent.astro";
 ---
 
-<div class="flex">
-    <div class="w-[65%] pr-10 text-base leading-6">
-        <h1 class="m-0">
+<div class="flex mt-12 mb-8">
+    <div class="w-[75%] pr-10 leading-6">
+        <h1 class="mb-2 text-5xl font-semibold text-gray-900 dark:text-white">
             Javi <span class="text-gradient">Sanchez</span>
         </h1>
-        <p>Full Stack web developer at Veridas</p>
-        <p>
+        <p
+            class="mb-4 text-2xl font-normal leading-none text-gray-400 dark:text-gray-500"
+        >
+            Full Stack web developer at Veridas
+        </p>
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
             Underworld is an American action horror film series created by Kevin
             Grevioux, Len Wiseman, and Danny McBride. It follows characters who
             are caught up
         </p>
         <nav class="flex gap-4 mt-8 flex-wrap">
-            <SocialPill href="https://linkedin.com/in/midudev">
+            <SocialPill href="https://linkedin.com/in/XXX">
                 <LinkedInIcon class="size-4 md:size-6" />
                  LinkedIn
             </SocialPill>
-            <SocialPill href="https://github.com/midudev">
+            <SocialPill href="https://github.com/Tigreton-dev">
                 <GitHubIcon class="size-4 md:size-6" />
                  GitHub
             </SocialPill>
-            <SocialPill href="mailto:miduga@gmail.com">
+            <SocialPill href="mailto:javier.san.mail@gmail.com">
                 <MailIcon class="size-4 md:size-6" />
-                 miduga@gmail.com
+                 javier.san.mail@gmail.com
             </SocialPill>
         </nav>
     </div>
@@ -41,3 +45,5 @@ import MailIcon from "./icons/Mail.astro";
         class="w-[25%] h-fit rounded-full"
     />
 </div>
+<CanvasReactComponent client:load />
+
